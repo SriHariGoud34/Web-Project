@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, intial-scale=1.0">
+		<title>job application</title>
+
+		<style type="text/css">
+			
+				
+			*{
+				padding:0px;
+				margin:0px;
+				box-sizing:border-box;
+				
+			}
+			
+			body{
+				background-color:lime;
+			    }
+			.apply_box{
+					max-width:600px;
+					padding:20px;
+					margin:0 auto;
+					margin-top:50px;
+					background-color:white;
+					box-shadow: 4px 3px 5px rgba(1,1,1,0.1);
+					border-radius:10px;
+					text-align:center;
+					
+				}
+			.container{
+					max-width:900px;
+					margin:0 auto;
+				}
+			#title_small{
+					font-size:15pt;
+				}
+			.form_control{
+					display:flex;
+					flex-direction:column;
+					font-weight: bolder;
+				}
+				label{
+					font-size:15px;
+					margin-bottom:5px;
+				}
+		
+		
+			input,textarea,select{
+					padding: 6px 10px;
+					border : 1px lightgry;
+					border-radius:5px;
+					font-size:15px;
+					}
+			input:focus{
+					outline-color:lightblue;
+				}
+		
+			.button:hover{
+					background-color:blue;
+					border:transparent;
+					padding:5px 10px;
+					color:white;
+					border-radius:8px;
+					transition:0.3s ease-in;
+				}
+			.submit_control{
+					display:flex;
+					justify-content:flex-end;
+					margin-top:20px;
+					
+					}
+		
+
+
+
+
+
+		</style>
+	</head>
+	<body>
+		<div class="container">
+		<div class="apply_box">
+		<!-- heading --> 
+		<h1>Job Application<span id="title_small"> (Web)</span></h1>
+		
+		<!-- Form -->
+		<form action = "/action_page.php" method="post">
+
+		<div class="form_container">
+
+		<!--first name-->
+		<div class="form_control">
+		<label for="fname">First Name</label>
+		<input type="text" name="fname" id="fname" placeholder="Enter First Name..." required>
+		</div>
+
+		<!--last name-->
+		<div class="form_control">
+		<label for="lname">Last Name</label>
+		<input type="text" name="lname" name="lname" placeholder="Enter Last Name..." required>
+		</div>
+
+		<!--email-->
+		<div class="form_control">
+		<label for="emale">Email</label>
+		<input type="email" name="email" id="email" placeholder="Enter Email id..." required>
+		</div>
+
+		<!--job role-->
+		<div class="form_control">
+		<label for="Job Role">Job Role</label>
+		<select name="job" id="job" required>
+		<option value="">Select Job Role</option>
+		<option value="Front End">Front End</option>
+		<option value="Back End">Back End</option>
+		<option value="Data Analyst">data analyst</option>
+		<option value="Full Stack Development">Full Stack Development</option>
+		</select>
+		</div>
+
+		<!-- address -->
+		<div class="form_control">
+		<label for="Address">Address</label>
+		<textarea name="address" id="address" rows="4" cols="70" placeholder="Enter Address"></textarea>
+		</div>
+
+		<!--City-->
+		<div class="form_control">
+		<label for="city">City</label>
+		<input type="text" name="city" id="city" placeholder="Enter City Name" required>
+		</div>
+
+		<!--pincode-->
+		<div class="form_control">
+		<label for="pincode">Pin Code</label>
+		<input type="number" name="pincode" id="pincode" placeholder="Enter Pin Code..." required>
+		</div>
+
+		<!--dateofbirth-->
+		<div class="form_control">
+		<label for="dob">D.O.B</label>
+		<input type="date" name="dob" id="dob" required> 
+		</div>
+	
+		<!--Upload your cv-->
+		<div class="form_control">
+		<label for="uycv">Upload Your CV</label>
+		<input type="file" name="uycv" id="uycv">
+		</div>
+
+		<div class="submit_control">
+		<input type="submit" value="Apply Now" class="button"> <pre>   </pre> <input type="reset" value="Reset"  class = "button">
+		</div>
+		
+
+		</div>
+		</div>
+		</div>
+		</form>
+
+	
+	</body>
+</html>
+		
