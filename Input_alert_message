@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alert box</title>
+</head>
+<body>
+    <!--Input Alert Box-->
+    <h1 style="text-align: center;">Input Answer Alert Message</h1>
+    <br>
+    <input type="text" id="alert" />
+    <br>
+    <button onclick="showAlert()">Click it!</button>
+    <script type="text/javascript">
+        function showAlert() {
+            alert(document.getElementById("alert").value);
+        }
+    </script>
+
+</body>
+</html>
