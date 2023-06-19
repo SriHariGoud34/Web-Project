@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            display:block;
+            background-color: bisque;
+            width:200px;
+            bottom: 0;
+
+        }
+        li {
+            padding: 20px;
+        }
+        a{
+            text-decoration: none;
+        }
+        li:hover{
+            background-color: white;
+        }
+        .block::after{
+            content:"";
+            display:table;
+            clear: both;
+        }
+      .b2 ul{
+        width:100%;
+        
+      }
+      .b2 ul li{
+        display:inline-block;
+        
+      }
+      .b2 ul li:last-child{
+        float:right;
+      }
+        
+    </style>
+</head>
+<body>
+    <div class="block">
+    <ul style="list-style-type:none ;padding:0px;margin:0px">
+        <li style="background-color:green; color:white"><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+    </div><br><br><br>
+    <div class="b2">
+    <ul style="list-style-type:none ;padding:0px;margin:0px">
+        <li style="background-color:green; color:white"><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+    </div>
+
+</body>
+</html>
