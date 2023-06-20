@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page</title>
+    <style>
+        .header{
+            text-align: center;
+            background-color: antiquewhite;
+        }
+        .topnav {
+            background-color: black;
+            
+        }
+        .topnav a{
+            color: aliceblue;
+            text-decoration: none;
+            padding: 20px;
+            display: inline-block;
+        }
+        .topnav a:hover{
+            color:black;
+            background-color: aliceblue;
+        }
+        body{
+            font-family: Arial;
+            margin: 0;
+        }
+    .column{
+        float: left;
+        width: 30.40%;
+       padding: 10px;
+    }
+    .row::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>header</h1>
+        <p>Resize the browser window to see the responsive effect.</p>
+        <div class="topnav">
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#" >link</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <h1>heading-1</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+        </div>
+        <div class="column">
+            <h1>heading-2</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+        </div>
+        <div class="column">
+            <h1>heading-3</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+        </div>
+    </div>
+
+</body>
+</html>
