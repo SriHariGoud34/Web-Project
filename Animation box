@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 100px;
+            width:100px;
+            background-color: aqua;
+            animation-name: hello;
+            animation-duration: 2s;
+
+}
+
+@keyframes hello{
+    from{background-color: aqua;}
+    to{background-color: black;}
+}
+
+    </style>
+</head>
+<body>
+    <div class="name"></div>
+</body>
+</html>
